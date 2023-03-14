@@ -3,7 +3,7 @@ import json
 
 
 if os.name == 'posix':
-    path = '/etc/t-learning/config.json'
+    path = '/etc/t-learning/config-tlearning-ai-api.json'
 else:
     path = './app/core/config.json'
 
