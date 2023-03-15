@@ -17,6 +17,7 @@ def ai_response(
     Returns:
         json: json object with the requested information.
     """
+    prompt = prompt.replace('     ', ' ').replace('    ', ' ').replace('   ', ' ').replace('  ', ' ')
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt= prompt,
