@@ -31,5 +31,6 @@ def ai_response(
     json_res = json.loads(res)
     text = json_res['choices'][0]['text']
     text = str(text).replace('\n', '').replace('.', '').replace('\\', '') # Cleaning the output before convert to JSON
+    print(text)
     json_text = json.loads(text)
     return json_text
