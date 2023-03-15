@@ -21,7 +21,7 @@ def ai_response(
         model="text-davinci-003",
         prompt= prompt,
         temperature=0.2,
-        max_tokens=768,
+        max_tokens=900,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
